@@ -1,0 +1,11 @@
+test
+<script>
+var conn = new WebSocket('ws://training-s5-2:9900');
+conn.onopen = function(e) {
+    console.log("Connection established!");
+};
+
+conn.onmessage = function(e) {
+    console.log(e.data);
+};
+</script>
